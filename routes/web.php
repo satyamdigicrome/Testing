@@ -8,6 +8,10 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('pages.about');
 })->name('about');
+Route::get('migrate',function(){
+    Illuminate\Support\Facades\Artisan::call('migrate');
+return 'done';
+});
 Route::get('/contact',function(){
     return view('pages.contact');
 })->name('contact');
