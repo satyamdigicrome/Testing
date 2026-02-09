@@ -1,123 +1,87 @@
-<footer class="bg-dark">
-    <div class="footer-main footer-main1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-7 col-md-12"> <img src="{{ asset('assets/images/brand/logo-white.png') }}"
-                                class="w-auto border-0" alt="img">
-                            <ul class="list-unstyled mb-0 mt-4">
-                                <li> <a href="javascript:void(0)"></a> </li>
-                                <li> <a href="javascript:void(0)">info@neuronskills.com, info@neuron.com</a></li>
-                                <li> <a href="javascript:void(0)">+ 01 234 567 88</a> </li>
-                                <li> <a href="javascript:void(0)">+ 01 234 567 89</a> </li>
-                            </ul>
-                            <ul class="list-unstyled list-inline mt-5 mb-lg-0 mb-5">
-                                <li class="list-inline-item"> <a
-                                        class="social-icons btn-sm rgba-white-slight waves-effect waves-light">
-                                        <i class="fa fa-facebook"></i> </a> </li>
-                                <li class="list-inline-item"> <a
-                                        class="social-icons btn-sm rgba-white-slight waves-effect waves-light">
-                                        <i class="fa fa-twitter"></i> </a> </li>
-                                <li class="list-inline-item"> <a
-                                        class="social-icons btn-sm rgba-white-slight waves-effect waves-light">
-                                        <i class="fa fa-google-plus"></i> </a> </li>
-                                <li class="list-inline-item"> <a
-                                        class="social-icons btn-sm rgba-white-slight waves-effect waves-light">
-                                        <i class="fa fa-linkedin"></i> </a> </li>
-                                <li class="list-inline-item"> <a
-                                        class="social-icons btn-sm rgba-white-slight waves-effect waves-light">
-                                        <i class="fa fa-github"></i> </a> </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-5 col-md-12">
-                            <h6 class="font-weight-normal text-white">Categories</h6>
-                            <ul class="list-unstyled mb-5 mb-lg-0">
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Software
-                                        Development</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Web
-                                        Development</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Web Designing</a>
-                                </li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Business
-                                        Classes</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Animation
-                                        Classes</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Networking
-                                        Classes</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12">
-                            <h6 class="font-weight-normal text-white">Courses</h6>
-                            <ul class="list-unstyled mb-5 mb-lg-0">
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Angular</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Java</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> HTML</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Devops</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Php Laravel</a>
-                                </li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Digital
-                                        Marketing</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-12">
-                            <h6 class="font-weight-normal text-white">Our Company</h6>
-                            <ul class="list-unstyled mb-lg-0 mb-5">
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Our Team</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Contact US</a>
-                                </li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> About Us</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Services</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Blog News</a>
-                                </li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Online
-                                        Classes</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-12">
-                            <h6 class="font-weight-normal text-white">Support</h6>
-                            <ul class="list-unstyled mb-5 mb-lg-0">
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Home</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Sitemap</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Privacy
-                                        Policy</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Cooky Policy</a>
-                                </li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Web User
-                                        Plocy</a></li>
-                                <li><a href="javascript:;"><i class="fe fe-chevron-right"></i> Terms and
-                                        Services</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="py-3 bg-dark">
-        <div class="container">
-            <div class="row d-flex">
-                <div class="col-lg-12 col-sm-12  mt-2 mb-2 text-center text-white"> Copyright © <span
-                        id="year">2026</span> <a href="javascript:void(0)" class="fs-14 text-primary">Neuron
-                        Skills</a>.
-                    Designed with <span class="fa fa-heart text-danger"></span> by <a href="#" target="_blank"
-                        class="fs-14 text-primary"> Neuron-Skills </a> All rights reserved. </div>
-            </div>
-        </div>
-    </div>
-</footer>
-<div class="modal fade" id="homeVideo" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content"> <button type="button" class="btn btn-default" data-bs-dismiss="modal"><i
-                    class="fa fa-times"></i></button>
-            <div class="embed-responsive embed-responsive-16by9"> <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/vslJ5OcgPyA" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen=""></iframe> </div>
-        </div>
-    </div>
-</div>
+ <footer class="footer-wrap style1 bg-heath">
+     <div class="footer-top pt-100 pb-70">
+         <div class="container">
+             <div class="row ">
+                 <div class="col-lg-4 col-md-6 col-sm-6">
+                     <div class="footer-widget">
+                         <a href="{{ route('home') }}" class="footer-logo"><img src="{{ asset('assets/img/logo.png') }}"
+                                 alt="Image rounded"></a>
+                         <p>Nullam varius turpis commodo pharetra est eros bibendum elit nec.</p>
+                         <h4 class="footer-widget-title">Newsletter</h4>
+                         <form action="#" class="newsletter-wrap">
+                             <div class="form-group">
+                                 <input type="text" placeholder="Your Email Address ..">
+                                 <button type="submit" class="submit-btn"> <i
+                                         class="lab la-telegram-plane"></i></button>
+                             </div>
+                         </form>
+                         <p>We Never Spam!</p>
+                     </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6 col-sm-6">
+                     <div class="footer-widget ml-30">
+                         <h4 class="footer-widget-title">Support</h4>
+                         <ul class="footer-menu">
+                             <li><a href="{{ route('faq') }}">Help(FAQ)</a></li>
+                             <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                             <li><a href="{{ route('about') }}">About Neuron</a></li>
+                             <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
+                             <li><a href="{{ route('terms') }}">Terms & Conditions</a></li>
+                         </ul>
+                     </div>
+                 </div>
+                 {{-- <div class="col-lg-2 offset-lg-1 col-md-6 col-sm-6">
+                     <div class="footer-widget">
+                         <h4 class="footer-widget-title">Useful Link</h4>
+                         <ul class="footer-menu">
+                             <li><a href="course.html">Photography</a></li>
+                             <li><a href="course.html">Ecour Professional</a></li>
+                             <li><a href="course.html">Web Design</a></li>
+                             <li><a href="course.html">Graphics Design</a></li>
+                             <li><a href="course.html">Computer Science</a></li>
+                         </ul>
+                     </div>
+                 </div> --}}
+                 <div class="col-lg-3 col-md-6 col-sm-6">
+                     <div class="footer-widget">
+                         <h4 class="footer-widget-title">Contact Us</h4>
+                         <ul class="footer-contact-address">
+                             <li><a href="tel:999762236473"> <i class="ri-phone-line"></i> +999 762 23 6473</a></li>
+                             <li> <i class="ri-mail-send-fill"></i> <a href="mailto:info@neuronskills.com"><span
+                                         class="__cf_email__"
+                                         data-cfemail="026b6c646d4267616d77702c616d6f">info@neuronskills.com</span></a>
+                             </li>
+                             <li> <i class="ri-earth-fill"></i> <a
+                                     href="https://www.neuronskills.com">www.neuronskills.com</a></li>
+                         </ul>
+                         <div class="share-on">
+                             <span>Follow Us :</span>
+                             <ul class="social-profile">
+                                 <li><a target="_blank" href="https://facebook.com"><i class="ri-facebook-fill"></i>
+                                     </a></li>
+                                 <li><a target="_blank" href="https://twitter.com"> <i class="ri-twitter-fill"></i> </a>
+                                 </li>
+                                 <li><a target="_blank" href="https://linkedin.com"> <i class="ri-linkedin-fill"></i>
+                                     </a></li>
+                                 <li><a target="_blank" href="https://instagram.com"> <i class="ri-instagram-line"></i>
+                                     </a></li>
+                             </ul>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div class="footer-bottom">
+         <div class="container">
+             <div class="row align-items-center">
+                 <div class="col-lg-12 col-md-8">
+                     <div class="copyright-text">
+                         <p><span class="la la-copyright"></span>Neuron Skills. All Rights Reserved By <a
+                                 href="https://neuronskills.com">NeuronSkills</a></p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </footer>
