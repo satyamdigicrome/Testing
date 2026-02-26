@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Faq extends Model
+{
+    protected $fillable = [
+        'question',
+        'answer',
+        'status',
+        'created_by',
+        'updated_by',
+    ];
+
+    protected $casts = [
+        'status' => 'boolean',
+        'created_by' => 'integer',
+        'updated_by' => 'integer',
+    ];
+}
+

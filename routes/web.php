@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AuthController as AdminAuthController;
 use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\DocumentPageController;
+use App\Http\Controllers\Admin\FaqController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -41,6 +44,13 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/', fn () => redirect()->route('admin.dashboard'));
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::resource('courses', CourseController::class)->except(['show']);
+        Route::resource('blogs', BlogController::class)->except(['show']);
+        Route::resource('faqs', FaqController::class)->except(['show']);
+        Route::get('documents', [DocumentPageController::class, 'index'])->name('documents.index');
+        Route::get('documents/create/{pageType}', [DocumentPageController::class, 'create'])->name('documents.create');
+        Route::post('documents', [DocumentPageController::class, 'store'])->name('documents.store');
+        Route::get('documents/{document}/edit', [DocumentPageController::class, 'edit'])->name('documents.edit');
+        Route::put('documents/{document}', [DocumentPageController::class, 'update'])->name('documents.update');
         Route::post('/logout', [AdminAuthController::class, 'logout'])->name('logout');
     });
 });
