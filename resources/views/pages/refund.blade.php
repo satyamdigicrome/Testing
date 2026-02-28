@@ -8,10 +8,10 @@
             <div class="row">
                 <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-10 offset-md-1">
                     <div class="breadcrumb-title">
-                        <h2>Terms &amp; Conditions</h2>
+                        <h2>Refund Policy</h2>
                         <ul class="breadcrumb-menu">
                             <li><a href="{{ route('home') }}">Home</a></li>
-                            <li>Terms &amp; Conditions</li>
+                            <li>Refund Policy</li>
                         </ul>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                             </div>
                         @else
                             <div class="pp-content text-center py-5">
-                                <p class="text-muted">Terms &amp; Conditions content is being prepared. Please check back soon.</p>
+                                <p class="text-muted">Refund Policy content is being prepared. Please check back soon.</p>
                             </div>
                         @endif
 

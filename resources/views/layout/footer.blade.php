@@ -22,11 +22,13 @@
                      <div class="footer-widget ml-30">
                          <h4 class="footer-widget-title">Support</h4>
                          <ul class="footer-menu">
-                             <li><a href="{{ route('faq') }}">Help(FAQ)</a></li>
+                             <li><a href="{{ route('faq') }}">Help (FAQ)</a></li>
                              <li><a href="{{ route('contact') }}">Contact Us</a></li>
                              <li><a href="{{ route('about') }}">About Neuron</a></li>
                              <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
-                             <li><a href="{{ route('terms') }}">Terms & Conditions</a></li>
+                             <li><a href="{{ route('terms') }}">Terms &amp; Conditions</a></li>
+                             <li><a href="{{ route('disclaimer') }}">Disclaimer</a></li>
+                             <li><a href="{{ route('refund') }}">Refund Policy</a></li>
                          </ul>
                      </div>
                  </div>

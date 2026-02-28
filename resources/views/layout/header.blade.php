@@ -53,7 +53,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-2 col-md-4 col-5 order-lg-1 order-md-1 order-1">
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="{{ route('home') }}">
                             <img class="logo-light" src="{{ asset('assets/img/logo.png') }}" alt="Image">
                             <img class="logo-dark" src="{{ asset('assets/img/logo-white.png') }}" alt="Image">
                         </a>
@@ -70,19 +70,9 @@
                                     <a class="{{ request()->routeIs('home') ? 'active' : '' }}"
                                         href="{{ route('home') }}">HOME</a>
                                 </li>
-                                <li class="has-children">
-                                    <a href="index-2.html#">COURSES</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="course.html">COURSES</a></li>
-                                        <li><a href="course-details.html">COURSE DETAILS</a></li>
-                                        <li class="has-children">
-                                            <a href="index-2.html#">INSTRUCTOR</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="events.html">INSTRUCTORS</a></li>
-                                                <li><a href="event-details.html">INSTRUCTOR DETAILS</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                <li class="{{ request()->routeIs('courses', 'course.show') ? 'active' : '' }}">
+                                    <a class="{{ request()->routeIs('courses', 'course.show') ? 'active' : '' }}"
+                                       href="{{ route('courses') }}">COURSES</a>
                                 </li>
                                 <li class="">
                                     <a class="{{ request()->routeIs('about') ? 'active' : '' }}"

@@ -30,6 +30,12 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link {{ request()->routeIs('admin.testimonials.*') ? 'active' : '' }}"
+                   href="{{ route('admin.testimonials.index') }}">
+                    Testimonials
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link {{ request()->routeIs('admin.documents.*') ? 'active' : '' }}"
                    href="{{ route('admin.documents.index') }}">
                     Documents
