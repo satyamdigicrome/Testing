@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AuthController as AdminAuthController;
 use App\Http\Controllers\Admin\CourseController;
@@ -13,14 +14,15 @@ use App\Http\Controllers\CourseController as ControllersCourseController;
 use App\Http\Controllers\LeadController;
 use App\Http\Controllers\Admin\LeadController as AdminLeadController;
 use App\Http\Controllers\Admin\TeamMemberController;
+use App\Http\Controllers\ContactQueryController;
+use App\Http\Controllers\Admin\ContactQueryController as AdminContactQueryController;
 use App\Http\Controllers\HomeController;
 use App\Models\DocumentPage;
 use App\Models\Testimonial;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/about', function () {
-    return view('pages.about');
-})->name('about');
+Route::get('/about', [AboutController::class, 'index'])->name('about');
+
 Route::get('migrate', function () {
     Illuminate\Support\Facades\Artisan::call('migrate');
     return 'done';
@@ -28,6 +30,8 @@ Route::get('migrate', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
+Route::post('/contact', [ContactQueryController::class, 'store'])->name('contact.store');
+
 Route::get('/testimonial', function () {
     return view('pages.testimonial');
 })->name('testimonial');
@@ -86,6 +90,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('leads', [AdminLeadController::class, 'index'])->name('leads.index');
         Route::resource('blogs', BlogController::class)->except(['show']);
         Route::resource('team-members', TeamMemberController::class)->except(['show']);
+        Route::get('contact-queries', [AdminContactQueryController::class, 'index'])->name('contact-queries.index');
+        Route::get('contact-queries/{contactQuery}', [AdminContactQueryController::class, 'show'])->name('contact-queries.show');
+        Route::delete('contact-queries/{contactQuery}', [AdminContactQueryController::class, 'destroy'])->name('contact-queries.destroy');
         Route::resource('faqs', FaqController::class)->except(['show']);
         Route::get('documents', [DocumentPageController::class, 'index'])->name('documents.index');
         Route::get('documents/create/{pageType}', [DocumentPageController::class, 'create'])->name('documents.create');
