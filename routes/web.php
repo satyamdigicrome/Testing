@@ -10,12 +10,14 @@ use App\Http\Controllers\Admin\FaqController;
 use App\Http\Controllers\Admin\TestimonialController;
 use App\Http\Controllers\BlogController as ControllersBlogController;
 use App\Http\Controllers\CourseController as ControllersCourseController;
+use App\Http\Controllers\LeadController;
+use App\Http\Controllers\Admin\LeadController as AdminLeadController;
+use App\Http\Controllers\Admin\TeamMemberController;
+use App\Http\Controllers\HomeController;
 use App\Models\DocumentPage;
 use App\Models\Testimonial;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', function () {
     return view('pages.about');
 })->name('about');
@@ -70,6 +72,7 @@ Route::get('/refund-policy', function () {
 Route::get('/faq', function () {
     return view('pages.faq');
 })->name('faq');
+Route::post('/lead', [LeadController::class, 'store'])->name('lead.store');
 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/login', [AdminAuthController::class, 'showLogin'])->name('login');
@@ -80,7 +83,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::resource('courses', CourseController::class)->except(['show']);
         Route::resource('testimonials', TestimonialController::class)->except(['show']);
+        Route::get('leads', [AdminLeadController::class, 'index'])->name('leads.index');
         Route::resource('blogs', BlogController::class)->except(['show']);
+        Route::resource('team-members', TeamMemberController::class)->except(['show']);
         Route::resource('faqs', FaqController::class)->except(['show']);
         Route::get('documents', [DocumentPageController::class, 'index'])->name('documents.index');
         Route::get('documents/create/{pageType}', [DocumentPageController::class, 'create'])->name('documents.create');

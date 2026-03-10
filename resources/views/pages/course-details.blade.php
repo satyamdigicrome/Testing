@@ -230,7 +230,7 @@
                         @else
                             <div class="single-course-price">Free</div>
                         @endif
-                        <a href="{{ route('contact') }}" class="btn v3 d-block text-center">Enroll Now</a>
+                        <a href="#" class="btn v3 d-block text-center js-lead-trigger">Enroll Now</a>
                     </div>
 
                 </div>

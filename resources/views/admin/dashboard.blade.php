@@ -16,6 +16,61 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-muted small">Module</div>
+                    <div class="h5 mb-0">Blogs</div>
+                    <div class="mt-3">
+                        <a class="btn btn-primary btn-sm" href="{{ route('admin.blogs.index') }}">Manage Blogs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-muted small">Module</div>
+                    <div class="h5 mb-0">Testimonials</div>
+                    <div class="mt-3">
+                        <a class="btn btn-primary btn-sm" href="{{ route('admin.testimonials.index') }}">Manage Testimonials</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-muted small">Module</div>
+                    <div class="h5 mb-0">FAQs</div>
+                    <div class="mt-3">
+                        <a class="btn btn-primary btn-sm" href="{{ route('admin.faqs.index') }}">Manage FAQs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-muted small">Module</div>
+                    <div class="h5 mb-0">Documents</div>
+                    <div class="mt-3">
+                        <a class="btn btn-primary btn-sm" href="{{ route('admin.documents.index') }}">Manage Documents</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-muted small">Module</div>
+                    <div class="h5 mb-0">Leads</div>
+                    <div class="mt-3">
+                        <a class="btn btn-primary btn-sm" href="{{ route('admin.leads.index') }}">View Leads</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 @endsection
 

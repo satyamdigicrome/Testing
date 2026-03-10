@@ -21,12 +21,8 @@
 
                             <div class="mb-3">
                                 <label class="form-label">Email</label>
-                                <input type="email"
-                                       name="email"
-                                       class="form-control"
-                                       value="{{ old('email') }}"
-                                       required
-                                       autofocus>
+                                <input type="email" name="email" class="form-control" value="{{ old('email') }}"
+                                    required autofocus>
                             </div>
 
                             <div class="mb-3">
@@ -35,20 +31,15 @@
                             </div>
 
                             <div class="form-check mb-3">
-                                <input class="form-check-input" type="checkbox" name="remember" id="remember" value="1" {{ old('remember') ? 'checked' : '' }}>
+                                <input class="form-check-input" type="checkbox" name="remember" id="remember"
+                                    value="1" {{ old('remember') ? 'checked' : '' }}>
                                 <label class="form-check-label" for="remember">Remember me</label>
                             </div>
-
                             <button class="btn btn-primary w-100" type="submit">Login</button>
                         </form>
-
-                        <div class="text-muted small mt-3">
-                            Seeded default admin: <strong>admin@example.com</strong> / <strong>password</strong>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 @endsection
-

@@ -36,6 +36,18 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link {{ request()->routeIs('admin.team-members.*') ? 'active' : '' }}"
+                   href="{{ route('admin.team-members.index') }}">
+                    Team Members
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->routeIs('admin.leads.*') ? 'active' : '' }}"
+                   href="{{ route('admin.leads.index') }}">
+                    Leads
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link {{ request()->routeIs('admin.documents.*') ? 'active' : '' }}"
                    href="{{ route('admin.documents.index') }}">
                     Documents
