@@ -15,7 +15,7 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->string('image')->nullable();
             $table->text('text')->nullable();
-            $tabl.e->unsignedTinyInteger('rating')->nullable(); // 1-5
+            $table->unsignedTinyInteger('rating')->nullable(); // 1-5
 
             $table->timestamps();
         });
